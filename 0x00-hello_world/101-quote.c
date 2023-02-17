@@ -2,7 +2,7 @@
 #include <unistd.h>
 /**
  * main - a C program that prints out text without using the printf or puts function
- *Return: 1 (error)
+ *Return: 1
  */
 int main(void)
 {
