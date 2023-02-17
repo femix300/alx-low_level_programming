@@ -5,13 +5,9 @@
  */
 int main(void)
 {
-	int size_of_char = sizeof(char);
+	printf("Size of a char: %ld byte(s)\n", sizeof(char));
 
-	printf("Size of a char: %d byte(s)\n", size_of_char);
-
-	int size_of_int = sizeof(int);
-
-	printf("Size of a long int: %d byte(s)\n", size_of_int);
+	printf("Size of a long int: %ld byte(s)\n", sizeof(int));
 
 	printf("Size of a long int: %ld byte(s)\n", sizeof(long int));
 
