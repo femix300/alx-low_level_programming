@@ -8,11 +8,11 @@ void puts2(char *str)
 {
 	int length, count;
 
-	len = 0;
+	length = 0;
 
-	while (str[len] != '\0')
+	while (str[length] != '\0')
 	{
-		len++;
+		length++;
 	}
 
 	for (count = 0; count < length; count += 2)
