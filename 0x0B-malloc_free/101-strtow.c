@@ -58,12 +58,13 @@ char **strtow(char *str)
 			return (NULL);
 		}
 
-		for (; j < k; j++)
-			words[i][j - k] = str[j];
-		words[i][j - k] = '\0';
+		for (int l = 0; j < k; l++, j++)
+			words[i][l] = str[j];
+		words[i][k - j] = '\0';
 	}
 
 	words[i] = NULL;
 
 	return (words);
 }
+
