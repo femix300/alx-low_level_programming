@@ -5,10 +5,11 @@
 
 /**
  * main - multiplies two positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: 0 on success, 98 on failure
+ * @argc: n arguments
+ * @argv: args
+ * Return: int
  **/
+
 int main(int argc, char *argv[])
 {
 	unsigned long mul;
@@ -17,17 +18,17 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
 	}
 
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][j] > '9' || argv[i][j] < '0')
+			if (argv[i][j] > 57 || argv[i][j] < 48)
 			{
 				printf("Error\n");
-				return (98);
+				exit(98);
 			}
 		}
 	}
@@ -35,4 +36,3 @@ int main(int argc, char *argv[])
 	printf("%lu\n", mul);
 	return (0);
 }
-
