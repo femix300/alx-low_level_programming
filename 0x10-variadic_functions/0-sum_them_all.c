@@ -15,7 +15,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_list arg_p;
 
-	int i, sum;
+	unsigned int i, sum;
 
 	sum = 0;
 
