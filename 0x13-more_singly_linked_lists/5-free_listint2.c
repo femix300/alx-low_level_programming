@@ -13,6 +13,7 @@ void free_listint2(listint_t **head)
 	temp = NULL;
 
 	if (head == NULL)
+		return;
 
 	temp = *head;
 
