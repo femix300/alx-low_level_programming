@@ -20,8 +20,6 @@ int sum_listint(listint_t *head)
 
 	while (temp != NULL)
 	{
-		if ((temp->n) < 0)
-			(temp->n) = -(temp->n);
 		sum += temp->n;
 		temp = temp->next;
 	}
