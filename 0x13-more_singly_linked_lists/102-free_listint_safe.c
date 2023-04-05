@@ -17,7 +17,7 @@ size_t free_listint_safe(listint_t **h)
 	current = *h;
 
 	if (*head == NULL || head == NULL)
-		return (NULL);
+		return (0);
 
 	while (current != NULL)
 	{
