@@ -16,6 +16,8 @@ size_t print_listint_safe(const listint_t *head)
 	current = NULL;
 	loop_node = NULL;
 
+	current = head;
+
 	while (current != NULL)
 	{
 		count++;
