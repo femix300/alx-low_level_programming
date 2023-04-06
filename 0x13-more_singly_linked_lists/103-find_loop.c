@@ -5,7 +5,7 @@
  * @head: head pointer to the linked list
  * Return: the address of the node where the loop starts
  */
-
+listint_t = *temp;
 listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *temp, *temp2;
