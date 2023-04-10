@@ -24,16 +24,10 @@ unsigned int binary_to_uint(const char *b)
 	expo = 1;
 	sum = 0;
 
-	while (len >= 0)
+	for (expo = 1, sum = 0, len--; len >= 0; len--, expo *= 2)
 	{
-		expo *= 2;
-
 		if (b[len] == '1')
-		{
 			sum += expo;
-		}
-
-		len--;
 	}
 
 	return (sum);
