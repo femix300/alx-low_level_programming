@@ -10,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum, expo, len;
 
-	len = expo = sum = 0;
+	len = 0;
 
 	if (!b)
 		return (0);
@@ -20,9 +20,6 @@ unsigned int binary_to_uint(const char *b)
 		if (b[len] != '1' && b[len] != '0')
 			return (0);
 	}
-
-	expo = 1;
-	sum = 0;
 
 	for (expo = 1, sum = 0, len--; len >= 0; len--, expo *= 2)
 	{
