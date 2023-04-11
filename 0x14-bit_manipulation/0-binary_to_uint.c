@@ -8,7 +8,9 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int sum, expo, len;
+	unsigned int sum, expo;
+
+	int len;
 
 	len = 0;
 
