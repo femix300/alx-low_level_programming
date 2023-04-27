@@ -183,4 +183,8 @@ int main(int __attribute__((__unused__)) argc, char **argv)
 	display_the_type(head->e_type, head->e_ident);
 	display_the_entry(head->e_entry, head->e_ident);
 
+	free(head);
+	elf_closer(op);
+	return (0);
+
 }
