@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	char *l = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 	char p[7] = "      ";
-	size_t len;
+	size_t len, i;
 	unsigned int hash;
 
 	if (argc != 2)
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	len = strlen(argv[1]);
 
 	hash = 0;
-	for (size_t i = 0; i < len; i++)
+	for (i = 0; i < len; i++)
 	{
 		hash += (unsigned int)argv[1][i];
 		hash *= (unsigned int)argv[1][i];
