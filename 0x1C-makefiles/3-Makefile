@@ -7,10 +7,10 @@ RM = rm -f
 all: $(NAME)
 
 clean:
-	$(RM) *~ *.swp $(NAME)
+	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) *.o
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
@@ -19,6 +19,3 @@ re: fclean all
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-# compiles the source files into object files
-%.o: %.c
-	$(CC) -c $< -o $@
