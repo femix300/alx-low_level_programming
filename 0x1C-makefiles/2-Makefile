@@ -8,5 +8,5 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 # compiles the source files into object files
-%.0: %.c
+%.o: %.c
 	$(CC) -c $< -o $@
