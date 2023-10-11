@@ -8,7 +8,7 @@
  * @value: the value to be searched for
  * Return: the index of the value
  * or -1 if the value wasn't foud or the array is null
-*/
+ */
 
 int binary_search(int *array, size_t size, int value)
 {
@@ -20,7 +20,7 @@ int binary_search(int *array, size_t size, int value)
 	left = 0;
 	right = size - 1;
 
-	while (left < right)
+	while (left <= right)
 	{
 		mid = (left + right) / 2;
 
